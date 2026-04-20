@@ -1,0 +1,289 @@
+:root{
+    --bg-setlist: url(../img/charly1.jpeg);
+}
+
+body{
+    background-image: var(--bg-setlist);
+}
+
+.setlist{
+    padding: 30px 20px;
+    margin-top: 8vh;
+
+    height: fit-content;
+    background-color: var(--tertiary-color);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.setlist h2{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.178);
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-family: "Allerta Stencil", sans-serif;
+    text-align: center;
+}
+
+.canciones{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.canciones div{
+    background-color: rgba(109, 109, 109, 0.658);
+    padding: 20px 80px;
+    border-radius: 10px;
+}
+
+.canciones h3{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.178);
+    font-family: "Allerta Stencil", sans-serif;
+    margin-bottom: 10px;
+}
+
+.canciones h4{
+    margin: 2px 0;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.178);
+    font-family: roboto, sans-serif;
+}
+
+.canciones h4 span{
+    color: var(--text);
+}
+
+.canciones h4 b{
+    color: var(--secondary-color);
+}
+
+.canciones h5{
+    font-size: 1rem;
+    color: var(--secondary-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.178);
+    font-family: roboto, sans-serif;
+    margin-top: 10px;
+}
+
+.CDs{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.CDs div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.CDs img{
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.459) 0px 3px 8px;
+}
+
+.CDs h3{
+    font-size: 1rem;
+    color: var(--text);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.178);
+    font-family: roboto, sans-serif;
+    text-align: center;
+}
+
+.CDs h3 a{
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.CDs h3 a:hover{
+    color: var(--primary-color);
+}
+
+
+@media (min-width: 481px){
+
+    .setlist{
+        padding: 40px 25px;
+    }
+
+    .setlist h2{
+        font-size: 2.3rem;
+    }
+
+    .canciones{
+        padding: 30px;
+    }
+
+    .canciones h3{
+        font-size: 1.8rem;
+    }
+
+    .canciones h4{
+        font-size: 1.15rem;
+    }
+
+    .canciones h5{
+        font-size: 1.1rem;
+    }
+
+    .CDs{
+        gap: 30px;
+        padding: 25px;
+    }
+
+    .CDs img{
+        max-width: 280px;
+        height: 280px;
+    }
+
+    .CDs h3{
+        font-size: 1.05rem;
+    }
+}
+
+
+@media (min-width: 769px){
+
+    .setlist{
+        padding: 5%;
+    }
+
+    .setlist h2{
+        font-size: 3rem;
+    }
+
+    .canciones{
+        flex-direction: row;
+        gap: 20%;
+        padding: 50px;
+    }
+
+    .canciones h3{
+        font-size: 2rem;
+    }
+
+    .canciones h4{
+        font-size: 1.5rem;
+    }
+
+    .canciones h5{
+        font-size: 1.2rem;
+    }
+
+    .CDs{
+        flex-direction: row;
+        gap: 100px;
+        padding: 50px 0;
+    }
+
+    .CDs div{
+        gap: 15px;
+    }
+
+    .CDs img{
+        width: 500px;
+        height: 500px;
+        max-width: 100%;
+    }
+
+    .CDs h3{
+        font-size: 1.2rem;
+    }
+
+    .CDs h3 a{
+        margin: 0 10px;
+    }
+}
+
+
+@media (min-width: 900px){
+
+    .setlist h2{
+        font-size: 3.2rem;
+    }
+
+    .canciones{
+        gap: 22%;
+        padding: 55px;
+    }
+
+    .canciones h3{
+        font-size: 2.1rem;
+    }
+
+    .canciones h4{
+        font-size: 1.55rem;
+    }
+
+    .CDs{
+        gap: 120px;
+        padding: 55px 0;
+    }
+
+    .CDs img{
+        width: 520px;
+        height: 520px;
+    }
+
+    .CDs h3{
+        font-size: 1.25rem;
+    }
+}
+
+
+@media (min-width: 1025px){
+
+    .setlist h2{
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+    }
+
+    .canciones{
+        gap: 25%;
+        padding: 60px;
+    }
+
+    .canciones h3{
+        font-size: 2.2rem;
+    }
+
+    .canciones h4{
+        font-size: 1.6rem;
+    }
+
+    .CDs{
+        gap: 150px;
+        padding: 60px 0;
+    }
+
+    .CDs img{
+        width: 550px;
+        height: 550px;
+    }
+
+    .CDs h3{
+        font-size: 1.3rem;
+    }
+}

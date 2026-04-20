@@ -1,0 +1,29 @@
+:root{
+    --bg-gira: url(../img/zeta1.png);
+}
+
+body{
+    background-image: var(--bg-gira);
+}
+
+.section1{
+    background-color: transparent;
+}
+
+.section1 img{
+    border-radius: 5px;
+}
+
+.section1 div{
+    background-color: rgba(43, 58, 71, 0.76);
+}
+
+.section1 div h2{
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.right{
+    box-shadow: none;
+}
+
